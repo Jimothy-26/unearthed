@@ -7,6 +7,9 @@ const app = express()
 
 app.use(cors())
 
+// Unit 4: Handle JSON request bodies
+app.use(express.json())
+
 app.use('/gifts', giftsRouter)
 
 app.get('/', (req, res) => {
